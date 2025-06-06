@@ -12,6 +12,7 @@ const togRight = document.getElementById('togRight');
 const implementation = document.getElementById("implementation");
 const output = document.getElementById("output");
 const resultsTerminal = document.getElementById("resultsTerminal")
+const lastOutput = document.getElementById('lastOutput');
 const impLabel = document.getElementById("impLabel");
 const bothLabel = document.getElementById("bothLabel");
 const outLabel = document.getElementById("outLabel");
@@ -218,7 +219,7 @@ btnArray.map((btn, i) => {
           })
           comment.style.display = "none";
           commentBtn.style.display = 'none';
-          resultsTerminal.style.display = "block";
+          lastOutput.style.display = "block";
         }else{
           plus.innerText = "+";
           section.style.display = "none";
@@ -230,6 +231,7 @@ btnArray.map((btn, i) => {
             }
           })
           commentBtn.style.display = 'block';
+          lastOutput.style.display = "none";
           if (right3.innerText === "+" && right4.innerText === "+" && right5.innerText === "+" && right6.innerText === "+" && right7.innerText === "+" && right8.innerText === "+"){
             factory.style.display = 'none';
             resultsTerminal.style.display = "none";
