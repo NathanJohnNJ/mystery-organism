@@ -1,0 +1,471 @@
+.geologica-extralight-sharp {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 1,
+    "SHRP" 100;
+}
+.geologica-extralight {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 1,
+    "SHRP" 0;
+}
+.geologica-regular-sharp {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 1,
+    "SHRP" 100;
+}
+.geologica-regular {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 1,
+    "SHRP" 0;
+}
+.geologica-semibold-sharp {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 1,
+    "SHRP" 100;
+}
+.geologica-semibold {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 1,
+    "SHRP" 0;
+}
+.geologica-black-sharp {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 1,
+    "SHRP" 100;
+}
+.geologica-black {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 1,
+    "SHRP" 0;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.title{
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 1,
+    "SHRP" 100;
+}
+.subTitle{
+  font-size: 1.4rem;
+}
+.codecademy {
+    border: none;
+    padding: 0.25rem 0px;
+    font-size: inherit;
+    white-space: initial;
+    box-shadow: none;
+    display: inline-block;
+    position: relative;
+    color:  black;
+    background-color: transparent;
+}
+.logoSvg {
+    color: currentcolor;
+    height: 27px;
+    vertical-align:sub;
+    transform: translateY(-5px);
+    scale: 1.1
+}
+.logoSvg:hover{
+  scale: 1.2;
+}
+.intro{
+  width: 75%;
+  margin-left: 12.5%;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.columns{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  height: 72vh;
+  overflow-y: scroll;
+}
+.leftCol{
+  width: 33%;
+}
+ aside{
+  display: flex;
+  flex-direction: row;
+  height:80px;
+ }
+ .asideLeft, .asideRight{
+  display:flex;
+  align-items: flex-end;
+  margin: 0 5px;
+  justify-content: center;
+  height:100px;
+ }
+ .asideCenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .both{
+  margin-bottom: 5px;
+ }
+ .toggleLabel{
+  transition: all;
+  transition-duration: 0.8s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  opacity: 0.5;
+ }
+ #impLabel{
+  opacity: 1;
+ }
+ .toggleWrapper{
+  transition: all;
+  transition-duration: 0.8s;
+  background-color: rgba(120, 120, 120, 0.6);
+  height: 40px;
+  width: 90px;
+  border-radius: 25px;
+  border: 1.5px solid rgba(100, 100, 100, 0.95);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position:relative;
+ }
+ .toggle{
+  transition: all;
+  transition-duration: 0.8s;
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  height: 35px;
+  width: 35px;
+  margin:2.5px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+ }
+ #togLeft:hover .toggle, #togCenter:hover .toggle, #togRight:hover .toggle{
+  scale: 1.05;
+ }
+ #togLeft, #togCenter, #togRight{
+  opacity: 0;
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height:40px;
+  width: 30px;
+  background: none;
+  cursor: pointer;
+ };
+ #togLeft{
+  left: 0;
+ }
+  #togCenter{
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #togRight{
+    right: 0;
+  }
+.terminalWrapper{
+  justify-self: center;
+  margin-top: 5vh;
+  width: fit-content;
+  background-color: black;
+  border-radius: 25px;
+  border: 4px solid dimgray;
+  font-size: 1.4rem;
+  padding: 20px;
+  box-shadow: -2px 2px 6px 2px rgba(0,0,0,0.5), 1px -1px 6px 2px rgba(0,0,0,0.5);
+  scale: 0.95;
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+}
+.comment{
+  color: gray;
+}
+.red{
+  color: rgba(242, 161, 99, 0.728);
+}
+.blue{
+  color: rgb(154, 154, 245);
+}
+.cyan{
+  color: cyan;
+}
+.yellow{
+  color: rgb(173, 156, 60);
+}
+.green{
+  color: green;
+}
+.purple{
+  color: purple;
+  font-weight: bold;
+}
+#output, #resultsTerminal, #factory, #more1, #more2, #more3, #more4, #complement, #comment, #given, #output3, #output4, #output5, #output6, #output7{
+  transition: all;
+  transition-duration: 0.8s;
+  display: none;
+}
+#implementation{
+  transition: all;
+  transition-duration: 0.8s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 66%;
+}
+#fullResults{
+  transition: all;
+  transition-duration: 0.8s;
+  display: none;
+}
+#closeBracket, #hideResults{
+  transition: all;
+  transition-duration: 0.8s;
+}
+#hideResults{
+  font-size: 0.6rem;
+}
+#hideResults:hover{
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+#elipses:hover{
+  scale: 1.1;
+  transform-origin: left;
+  cursor: pointer;
+}
+h2{
+  color: dimgrey;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+h3{
+  color: white;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+button{
+  transition: all;
+  transition-duration: 0.8s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+.collapsible {
+  transition: all;
+  transition-duration: 0.8s;
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  display: flex;
+  align-items:center;  
+  min-height: fit-content;   
+}
+.right{
+  transition: all;
+  transition-duration: 0.8s;
+  width: 100%;
+  text-align:right;
+  font-size: 1.5rem;
+}
+.right:hover{
+  transition: all;
+  transition-duration: 0.8s;
+  font-size: 1.65rem;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255, 0.6);
+}
+
+.active, .collapsible:hover {
+  transition: all;
+  transition-duration: 0.8s;
+  background-color: #555;
+}
+#commentBtn{
+  transition: all;
+  transition-duration: 0.8s;
+  border-radius: 20px;
+  background-color: dimgrey;
+  color: white;
+  font-size: small;
+  margin: 8px 0 -20px 0;
+}
+#commentBtn:hover{
+  transition: all;
+  transition-duration: 0.8s;
+  background-color: lightgrey;
+}
+.content {
+  transition: all;
+  transition-duration: 0.8s;
+  padding: 0 18px;
+  display: none;
+  overflow: visible;
+  background-color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  min-height: fit-content;
+  font-size:1.3rem;
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV,SHRP@100..900,1,0..100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Mystery Organism - Codecademy Project</title>
+</head>
+<body>
+  <header>
+
+  </header>
+  <main>
+    <h1 class="title">Mystery Organism<br/>
+      <span class="subTitle">- </span>
+      <a href="https://codecademy.com/" target="_blank" rel="noreferrer" class="codecademy" title="Codecademy" aria-label="Codecademy" aria-labelledby="Codecademy">
+        <svg viewBox="-3 0 106 25.7" class="logoSvg">
+          <title>Codecademy Logo</title>
+          <g fill="none" fill-rule="nonzero">
+            <path fill="currentColor" d="M4.213 14.896c-.192-.562-.278-1.275-.278-2.226 0-.95.086-1.664.278-2.226.513-1.599 1.86-2.485 3.637-2.485 1.326 0 2.353.54 3.06 1.404a.18.18 0 01-.022.26L9.732 10.66c-.086.066-.192.066-.256-.043-.45-.497-.9-.778-1.626-.778-.792 0-1.39.39-1.648 1.167-.128.454-.17.973-.17 1.664 0 .692.042 1.232.192 1.686.257.756.856 1.167 1.647 1.167.727 0 1.198-.28 1.626-.778.064-.086.171-.086.257-.022l1.155 1.038c.086.065.064.173.022.26-.707.842-1.734 1.382-3.06 1.382-1.775-.021-3.145-.886-3.658-2.507zm39.704 0c-.192-.562-.278-1.275-.278-2.226 0-.95.086-1.664.278-2.226.514-1.599 1.862-2.485 3.637-2.485 1.326 0 2.375.54 3.06 1.404a.18.18 0 01-.022.26l-1.155 1.037c-.086.066-.193.066-.257-.043-.45-.497-.899-.778-1.626-.778-.791 0-1.39.39-1.647 1.167-.15.454-.193.973-.193 1.664 0 .692.043 1.232.193 1.686.257.756.856 1.167 1.647 1.167.727 0 1.198-.28 1.626-.778.064-.086.171-.086.257-.022l1.155 1.038c.086.065.064.173.022.26-.707.842-1.734 1.382-3.06 1.382-1.775-.021-3.123-.886-3.637-2.507zm46.552 2.27c-.107 0-.192-.066-.192-.195v-5.187c0-1.167-.578-1.967-1.67-1.967-1.069 0-1.69.8-1.69 1.967v5.187c0 .108-.064.195-.192.195h-1.69c-.107 0-.192-.066-.192-.195v-5.187c0-1.167-.578-1.967-1.67-1.967-1.069 0-1.69.8-1.69 1.967v5.187c0 .108-.063.195-.192.195h-1.69c-.107 0-.192-.066-.192-.195V8.348c0-.108.064-.195.192-.195h1.69c.107 0 .193.065.193.195v.648h.021c.385-.562 1.155-1.037 2.332-1.037 1.048 0 1.883.432 2.418 1.189h.021c.684-.757 1.562-1.19 2.824-1.19 2.054 0 3.209 1.427 3.209 3.35v5.685c0 .108-.064.194-.193.194l-1.647-.021zm4.228 3.177c-.108 0-.193-.066-.193-.195v-1.491c0-.108.064-.194.193-.194h.32c.707 0 1.048-.325 1.327-1.06l.257-.756-3.231-8.494c-.043-.108.043-.194.15-.194h1.818c.107 0 .193.065.214.194l1.99 5.879h.043l1.904-5.879c.043-.108.107-.194.213-.194h1.733c.108 0 .193.065.15.194l-3.337 9.401c-.77 2.14-1.498 2.81-2.974 2.81l-.577-.021zm-76.93-6.009c.15-.475.192-.908.192-1.664 0-.756-.043-1.167-.192-1.664-.257-.757-.835-1.167-1.647-1.167-.813 0-1.412.432-1.669 1.167-.15.475-.193.886-.193 1.664 0 .756.043 1.189.193 1.664.257.757.835 1.167 1.669 1.167.812.022 1.39-.41 1.647-1.167zm-5.306.562c-.192-.627-.3-1.232-.3-2.226s.087-1.578.3-2.226c.492-1.578 1.84-2.485 3.637-2.485 1.776 0 3.124.907 3.615 2.485.193.627.3 1.232.3 2.226s-.086 1.578-.3 2.226c-.491 1.578-1.84 2.485-3.615 2.485-1.775 0-3.123-.907-3.637-2.485zm43.085-6.937c2.695 0 3.68.95 3.722 3.155v5.857c0 .13-.085.195-.192.195h-1.54c-.13 0-.193-.087-.193-.195v-.648h-.022c-.406.605-1.24 1.037-2.481 1.037-1.626 0-2.974-.865-2.974-2.745 0-1.945 1.348-2.853 3.53-2.853h.728c.128 0 .192.087.192.195v1.189c0 .13-.086.194-.192.194h-.407c-1.327 0-1.904.368-1.904 1.21 0 .757.535 1.124 1.519 1.124 1.262 0 1.968-.497 1.968-1.534v-3.004c-.043-.973-.535-1.405-1.968-1.405-.984 0-1.583.281-2.011.627-.086.064-.193.043-.257-.043l-.685-1.233c-.042-.086-.021-.172.043-.237.706-.54 1.67-.886 3.124-.886zm-21.66 3.803h2.502c.065 0 .108-.043.108-.108 0-.302-.043-.54-.108-.756-.235-.735-.877-1.167-1.711-1.167-.834 0-1.498.432-1.733 1.167-.021.087-.043.173-.064.28v.044c-.064.41-.086.735-.107 1.254-.003.434.033.868.107 1.296.021.13.064.26.107.39.278.885.984 1.361 1.968 1.361 1.006 0 1.626-.367 2.075-.864.086-.109.193-.109.278-.044l1.07.973c.086.065.086.173.021.26-.77.907-2.01 1.534-3.636 1.534-1.862 0-3.188-.93-3.68-2.507-.193-.584-.321-1.276-.321-2.205 0-.93.107-1.642.3-2.226.492-1.577 1.86-2.485 3.615-2.485 1.818 0 3.145.95 3.637 2.485.214.627.3 1.254.3 2.702 0 .13-.065.194-.193.194h-4.536c-.064 0-.085-.043-.085-.086v-1.405c0-.065.043-.087.085-.087zm-4.83-7.42c.107 0 .193.064.214.107v12.319c0 .13-.085.195-.192.195h-1.69c-.128 0-.193-.087-.193-.195v-.67h-.021c-.407.605-1.134 1.06-2.332 1.06-1.498 0-2.61-.714-3.06-2.162-.234-.692-.32-1.319-.32-2.529s.107-1.837.32-2.528c.45-1.427 1.52-2.14 2.996-2.161h1.262c.043.02.064.043.064.086v1.707c0 .044-.021.087-.064.087h-.727c-.792.021-1.348.432-1.583 1.167-.129.41-.193.864-.193 1.685 0 .822.064 1.276.193 1.686.235.735.812 1.146 1.625 1.146.835 0 1.412-.39 1.648-1.146a4.85 4.85 0 00.171-1.167V4.536c0-.13.085-.195.192-.195h1.69zm44.176 7.42h2.503c.064 0 .107-.043.107-.108 0-.302-.043-.54-.107-.756-.235-.735-.877-1.167-1.712-1.167-.834 0-1.497.432-1.732 1.167a5.779 5.779 0 00-.064.28v.044c-.064.41-.086.735-.107 1.254-.003.434.033.868.106 1.296.022.13.065.26.108.39.278.885.984 1.361 1.968 1.361 1.006 0 1.626-.367 2.075-.864.086-.109.193-.109.278-.044l1.07.973c.085.065.085.173.021.26-.77.907-2.011 1.534-3.637 1.534-1.86 0-3.187-.93-3.68-2.507-.192-.584-.32-1.276-.32-2.205 0-.93.107-1.642.3-2.226.491-1.577 1.86-2.485 3.614-2.485 1.819 0 3.145.95 3.638 2.485.213.627.3 1.254.3 2.702 0 .13-.065.194-.193.194h-4.536c-.064 0-.086-.043-.086-.086v-1.405c0-.065.043-.087.086-.087zm-4.829-7.42c.107 0 .193.064.236.172v12.319c0 .13-.086.194-.193.194h-1.69c-.128 0-.192-.086-.192-.194v-.67h-.022c-.428.605-1.155 1.059-2.353 1.059-1.498 0-2.61-.713-3.06-2.161-.235-.692-.32-1.34-.32-2.55 0-1.232.107-1.86.32-2.551.45-1.426 1.54-2.14 3.017-2.161h1.24c.129 0 .193.086.193.194v1.492c0 .13-.085.194-.192.194h-.727c-.792.022-1.349.433-1.584 1.167-.128.41-.192.865-.192 1.686s.064 1.275.192 1.686c.235.756.792 1.167 1.626 1.167.835 0 1.412-.41 1.648-1.167.085-.302.15-.649.17-1.167V4.536c0-.13.086-.195.193-.195h1.69zM50.078 19.534c.295 0 .357.09.357.362v1.447c0 .294-.083.362-.357.362h-5.723c-.296 0-.358-.09-.358-.362v-1.447c0-.295.052-.362.358-.362h5.723zM0 .362C0 .109.043.043 0 0h42.208c.23 0 .272.022.358 0v21.344c0 .231-.021.275 0 .362-.086-.022-.129 0-.358 0H0v-.002l.007-.028c.006-.037-.002-.053-.006-.012L0 21.69V.361zm2.146 19.173H40.42c-.043-.043 0-.107 0-.362V2.171H2.146v17.364z" />
+          </g>
+        </svg>
+      </a> <span class="subTitle">Project -</span>
+    </h1>
+    <section>
+      <p class="intro">This is my take on the 'Mystery Organism' project which is part of Codecademy's Full-Stack Developer course. After completing the requirements for the project, I thought about how I could share my code with others in Codecademy's forums in a more interesting format so they could more easily follow along. I hope you like what I've created, and as always, if you have any questions or feedback, feel free to get in touch!</p>
+    </section>
+    <aside>
+      <div class="asideLeft">
+        <h4 class="toggleLabel" id="impLabel">
+          IMPLEMENTATION
+        </h4>
+      </div>
+      <div class="asideCenter">
+        <h4 class="toggleLabel both" id="bothLabel">
+          BOTH
+        </h4>
+        <div class="toggleWrapper" id="toggleWrapper">
+          <div class="toggle" id="toggle"></div>
+          <div id="togLeft"></div>
+          <div id="togCenter"></div>
+          <div id="togRight"></div>
+        </div>
+      </div>
+      <div class="asideRight">
+        <h4 class="toggleLabel" id="outLabel">
+           OUTPUT
+        </h4>
+      </div>
+    </aside>
+    <div class="columns">
+      <section class="column leftCol">
+        <h2>Prerequisites:</h2>
+        <button id="btn1" type="button" class="collapsible">1. <span class="right" id="right1">+</span></button>
+        <div class="content" id="section1">
+          <p>In order to complete this project, you should have completed the first few sections of Introduction to JavaScript (through Learn JavaScript: Objects).</p>
+        </div>
+
+        <h2>Project Requirements:</h2>
+        <button id="btn2" type="button" class="collapsible">2. <span class="right" id="right2">+</span></button>
+        <div class="content" id="section2">
+          <p>Look over the starter code. There are two helper functions: returnRandBase() and mockUpStrand().</p>
+          <p>DNA is comprised of four bases (Adenine, Thymine, Cytosine, and Guanine). When returnRandBase() is called, it will randomly select a base and return the base ('A','T','C', or 'G').</p>
+          <p>mockUpStrand() is used to generate an array containing 15 bases to represent a single DNA strand with 15 bases.</p>
+          <p>You’ll use these helper functions later to create your objects that represent P. aequor.</p>
+        </div>
+        <button id="btn3" type="button" class="collapsible">3. <span class="right" id="right3">+</span></button>
+        <div class="content" id="section3">
+          <p>Since you need to create multiple objects, create a factory function pAequorFactory() that has two parameters:</p>
+          <p>The first parameter is a number (no two organisms should have the same number).
+          The second parameter is an array of 15 DNA bases.
+          pAequorFactory() should return an object that contains the properties specimenNum and dna that correspond to the parameters provided.</p>
+          <p>You’ll also add more methods to this returned object in the later steps.</p>
+        </div>
+        <button id="btn4" type="button" class="collapsible">4. <span class="right" id="right4" >+</span></button>
+        <div class="content" id="section4">
+          <p>Your team wants you to simulate P. aequor‘s high rate of mutation (change in its DNA).</p>
+
+          <p>To simulate a mutation, in pAequorFactory()‘s returned object, add the method .mutate().</p>
+
+          <p>.mutate() is responsible for randomly selecting a base in the object’s dna property and changing the current base to a different base. Then .mutate() will return the object’s dna.</p>
+
+          <p>For example, if the randomly selected base is the 1st base and it is 'A', the base must be changed to 'T', 'C', or 'G'. But it cannot be 'A' again.</p>
+        </div>
+        <button id="btn5" type="button" class="collapsible">5. <span class="right" id="right5">+</span></button>
+        <div class="content" id="section5">
+          <p>Your research team wants to be able to compare the DNA sequences of different P. aequor. You’ll have to add a new method (.compareDNA()) to the returned object of the factory function.</p>
+
+          <p>.compareDNA() has one parameter, another pAequor object.</p>
+
+          <p>The behavior of .compareDNA() is to compare the current pAequor‘s .dna with the passed in pAequor‘s .dna and compute how many bases are identical and in the same locations. .compareDNA() does not return anything, but prints a message that states the percentage of DNA the two objects have in common — use the .specimenNum to identify which pAequor objects are being compared.</p>
+        </div>
+        <button id="btn6" type="button" class="collapsible">6. <span class="right" id="right6">+</span></button>
+        <div class="content" id="section6">
+        <p>P. aequor have a likelier chance of survival if their DNA is made up of at least 60% 'C' or 'G' bases.</p>
+
+          <p>In the returned object of pAequorFactory(), add another method .willLikelySurvive().</p>
+
+          <p>.willLikelySurvive() returns true if the object’s .dna array contains at least 60% 'C' or 'G' bases. Otherwise, .willLikelySurvive() returns false.</p>
+        </div>
+        <button id="btn7" type="button" class="collapsible">7. <span class="right" id="right7" >+</span></button>
+        <div class="content" id="section7">
+          <p>With the factory function set up, your team requests that you create 30 instances of pAequor that can survive in their natural environment. Store these instances in an array for your team to study later.</p>
+        </div>
+        <button id="btn8" type="button" class="collapsible"><h3>Project Extension:</h3><span class="right" id="right8">+</span></button>
+        <div class="content" id="section8">
+          <p>If you’d like to challenge yourself further, you could consider the following:</p>
+
+          <p>Create a .complementStrand() method to the factory function’s object that returns the complementary DNA strand. The rules are that 'A's match with 'T's and vice versa. Also, 'C's match with 'G's and vice versa.</p>
+          <p>Use the .compareDNA() to find the two most related instances of pAequor.</p>
+        </div>
+      </section>
+      <section class="column" id="implementation">
+        <div class="terminalWrapper" id="given">
+          <div>
+            <span class="comment">// Returns a random DNA base</span><br/>
+            <span class="blue">const returnRandBase</span> = () => {<br/>
+            <span class="blue">&nbsp;&nbsp;const dnaBases </span>= [<span class="yellow">'A'</span>, <span class="yellow">'T'</span>, <span class="yellow">'C'</span>, <span class="yellow">'G'</span>]<br/>
+            <span class="blue">&nbsp;&nbsp;return</span><span class="red"> dnaBases</span>[<span class="red">Math</span>.<span class="cyan">floor</span>(<span class="red">Math</span>.<span class="cyan">random</span>() * <span class="red">4</span>)] <br/>
+            }<br/><br/>
+            <span class="comment">// Returns a random single strand of DNA containing 15 bases</span><br/>
+            <span class="blue">const mockUpStrand</span> = () => {<br/>
+            <span class="blue">&nbsp;&nbsp;const newStrand</span> = [];<br/>
+            <span class="blue">&nbsp;&nbsp;for</span> (<span class="blue">let</span> i =<span class="red"> 0</span>; <span class="red"> i</span> < <span class="red"> 15</span>; <span class="red"> i</span>++) {<br/>
+            <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;newStrand</span>.<span class="cyan">push</span>(<span class="red">returnRandBase</span>())<br/>
+            &nbsp;&nbsp;}<br/>
+            <span class="blue">&nbsp;&nbsp;return</span><span class="red"> newStrand</span>;<br/>
+            }
+          </div>
+        </div>
+        <div class="terminalWrapper" id="factory">
+          <span class="red">function</span> <span class="yellow">pAequorFactory(</span>number, array<span class="yellow">){</span><br/>
+          &nbsp;&nbsp;<span class="red">const </span><span class="tellow">specimen</span> = <span class="purple">{</span><br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: number,<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;dna: array,<br/>
+          <div id="more1"><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="yellow">mutate()</span><span class="blue">{</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">let</span> newBase <span class="red">=</span>  <span class="yellow">returnRandBase()</span>;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">const</span> <span class="yellow">index</span> <span class="red">=</span> Math.<span class="yellow">floor(</span>Math.<span class="yellow">random</span><span class="purple">()</span><span class="red"> * 15</span><span class="yellow">)</span>;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">const</span> <span class="yellow">existingBase</span> <span class="red">=</span> <span class="yellow">this</span>.dna<span class="yellow">[</span>index<span class="yellow">]</span>;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">do</span> <span class="yellow">{</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newBase <span class="red">=</span>  <span class="yellow">returnRandBase()</span>;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yellow">}</span> <span class="red">while</span> <span class="yellow">(</span>newBase<span class="red"> === </span>existingBase<span class="yellow">)</span>;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yellow">this</span>.dna<span class="yellow">[</span>index<span class="yellow">]</span><span class="red"> = </span>newBase;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">return </span><span class="yellow">this</span>.dna;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">}</span>,<br/>
+          </div>
+          <div id="more2"><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="yellow">compareDNA(</span>otherpAequor<span class="yellow">)</span><span class="blue">{</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">let</span> tally <span class="red">= 0</span>;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">for</span> <span class="yellow">(</span><span class="red">let</span> i <span class="red">= 0</span>; i <span class="red"><15</span>; i<span class="red">++</span><span class="yellow">){</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">if</span><span class="yellow"> (this</span>.dna<span class="yellow">[</span>i<span class="yellow">]</span><span class="red"> === </span>otherpAequor.dna<span class="yellow">[</span>i<span class="yellow">])</span><span class="purple">{</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tally <span class="red">+= 1</span>;<br/> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple">}</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yellow">}</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">const</span> <span class="yellow">percentage</span> <span class="red">=</span> Math.<span class="yellow">floor(</span><span class="purple">(</span> tally <span class="red">/ 15</span><span class="purple"> ) </span><span class="red">* 100</span><span class="yellow">).toString()</span><span class="red"> + </span><span class="green">'%'</span>;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.<span class="yellow">log(</span><span class="green">`Specimen #</span><span class="red">${</span><span class="yellow">this</span>.specimenNum<span class="red">}</span><span class="green"> and specimen #</span><span class="red">${</span>otherpAequor.specimenNum<span class="red">}</span><span class="green"> have </span><span class="red">${</span>percentage<span class="red">} </span><span class="green">DNA in common.`</span><span class="yellow">)</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">}</span>,<br/>
+          </div>
+          <div id="more3"><br/>
+            <button id="commentBtn" type="button">Show Alternative Method</button><br/><br/>
+            <span class="comment" id="comment">
+              // initial approach to require at least 60% of C or G individually <br/>
+              // willLikelySurvive(){<br/>
+              // &nbsp;&nbsp;let cTally = 0;<br/>
+              // &nbsp;&nbsp;let gTally = 0;<br/>
+              // &nbsp;&nbsp;this.dna.map((base) => {<br/>
+              // &nbsp;&nbsp;&nbsp;&nbsp;if (base === 'C'){<br/>
+              // &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cTally += 1;<br/>
+              // &nbsp;&nbsp;&nbsp;&nbsp;} else if (base === 'G'){<br/>
+              // &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gTally += 1;<br/>
+              // &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+              // &nbsp;&nbsp;})<br/>
+              // &nbsp;&nbsp;const cPercentage = Math.floor(( cTally / 15 ) * 100);<br/>
+              // &nbsp;&nbsp;const gPercentage = Math.floor(( gTally / 15 ) * 100);<br/>
+              // &nbsp;&nbsp;if (cPercentage >= 60 || gPercentage >= 60){<br/>
+              // &nbsp;&nbsp;&nbsp;&nbsp;return true;<br/>
+              // &nbsp;&nbsp;} else {<br/>
+              // &nbsp;&nbsp;&nbsp;&nbsp;return false;<br/>
+              // &nbsp;&nbsp;}<br/>
+              // }<br/><br/>
+
+              // Second approach to require 60% of C or G combined to reduce the necessary iterations and compute power to meet the requirements for the 'createSurvivingSpecimens' function<br/>
+            </span>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="yellow">willLikelySurvive(</span><span class="yellow">)</span><span class="blue">{</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">let</span> tally <span class="red">= 0</span>;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yellow">this</span>.<span class="red">dna</span>.<span class="yellow">map(</span><span class="purple">(</span>base<span class="purple">)</span> <span class="red">=></span> <span class="yellow">{</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">if</span> <span class="purple">(</span>base <span class="red">===</span> <span class="green">'C'</span> <span class="red">||</span> base <span class="red">===</span> <span class="green">'G'</span><span class="purple">){</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tally <span class="red">+= 1</span>;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple">}</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yellow">})</span>;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">const</span> <span class="yellow">percentage</span> <span class="red">=</span> Math.<span class="yellow">floor(</span><span class="purple">(</span> tally <span class="red">/ 15</span><span class="purple"> ) </span><span class="red">* 100</span><span class="yellow">)</span>;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">if</span> <span class="yellow">(</span>percentage <span class="red">>= 60</span><span class="yellow">)</span><span class="yellow">{</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">return</span> <span class="yellow">true</span>;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yellow">}</span> <span class="red">else</span> <span class="yellow">{</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">return</span> <span class="yellow">false</span>;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yellow">}</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">}</span>,<br/>
+          </div>
+          <div id="complement"><br/>
+            <span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;complementStrand()</span><span class="blue">{</span><br/>
+            <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const</span> newStrand <span class="red">=</span> <span class="yellow">[]</span>;<br/>
+            <span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this</span>.<span class="red">dna</span>.<span class="yellow">map(</span><span class="purple">(</span>base<span class="purple">)</span> <span class="red">=></span> <span class="yellow">{</span><br/>
+            <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch</span> <span class="purple">(</span>base<span class="purple">){</span><br/>
+            <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case</span> <span class="green">'A'</span>:<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newStrand.<span class="yellow">push</span><span class="purple">(</span><span class="green">'T'</span><span class="purple">)</span>;<br/>
+            <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</span>;<br/>
+            <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case</span> <span class="green">'T'</span>:<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newStrand.<span class="yellow">push</span><span class="purple">(</span><span class="green">'A'</span><span class="purple">)</span>;<br/>
+            <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</span>;<br/>
+            <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case</span> <span class="green">'C'</span>:<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newStrand.<span class="yellow">push</span><span class="purple">(</span><span class="green">'G'</span><span class="purple">)</span>;<br/>
+            <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</span>;<br/>
+            <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case</span> <span class="green">'G'</span>:<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newStrand.<span class="yellow">push</span><span class="purple">(</span><span class="green">'C'</span><span class="purple">)</span>;<br/>
+            <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</span>;<br/>
+            <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default</span>:<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.<span class="yellow">log</span><span class="purple">(</span><span class="green">'Error: DNA base must be "A", "C", "G" or "T".'</span><span class="purple">)</span>;<br/>
+            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><br/>
+            <span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;})</span>;<br/>
+            <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return</span> newStrand;<br/>
+            <span class="blue">&nbsp;&nbsp;&nbsp;&nbsp;}</span>,<br/>
+          </div>
+          <span class="purple">&nbsp;&nbsp;}</span><br/>
+          <span class="red">&nbsp;&nbsp;return </span> specimen;<br/>
+          <span class="yellow">}</span><br/><br/>
+        </div>
+        <div class="terminalWrapper" id="more4">
+          <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;function</span> <span class="yellow">createSurvivingSpecimens(</span>amount<span class="yellow">){</span><br/>
+          <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let</span> survivingSpecimens <span class="red">=</span> <span class="yellow">[]</span>;<br/>
+          <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let</span> i <span class="red">= 0</span>;<br/>
+          <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do</span> <span class="purple">{</span><br/>
+          <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const</span> <span class="yellow">specimen</span> <span class="red">=</span><span class="yellow"> pAequorFactory(</span>i, <span class="yellow">mockUpStrand()</span><span class="yellow">)</span>;<br/>
+          <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if</span> <span class="yellow">(</span>specimen.<span class="yellow">willLikelySurvive()</span> <span class="red">=== true</span><span class="yellow">)</span> <span class="blue">{</span><br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;survivingSpecimens.<span class="yellow">push(</span>specimen<span class="yellow">)</span>;<br/>
+          <span class="blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i <span class="red">++</span>;<br/>
+          <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span> <span class="red">while</span> <span class="yellow">(</span>survivingSpecimens.length <span class="red">< amount</span><span class="yellow">)</span>;<br/>
+          <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return</span> survivingSpecimens;<br/>
+          <span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;}</span><br/><br/>
+          <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;const</span> <span class="yellow">survivingSpecimens</span> <span class="red">=</span> <span class="yellow">createSurvivingSpecimens(</span><span class="red">30</span><span class="yellow">)</span>;
+        </div>
+      </section>
+      <section class="column" id="output">
+        <div class="terminalWrapper" id="resultsTerminal">
+          <div id="output3">
+            <span class="comment">// Sample data for tests</span><br/>
+            <span class="blue">const first</span> = <span class="red">pAequorFactory</span>(<span class="red">12</span>, <span class="red">mockUpStrand</span>());<br/>
+            First sample:<br/>
+            &nbsp;&nbsp;specimenNum: <span class="red">12</span>,<br/>
+            &nbsp;&nbsp;dna:[<br/>
+            <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;'A'</span>,<span class="green">'A'</span>,<span class="green">'A'</span>,<span class="green">'A'</span>,<br/>
+            <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;'A'</span>,<span class="green">'A'</span>,<span class="green">'G'</span>,<span class="green">'G'</span>,<br/>
+            <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;'A'</span>,<span class="green">'C'</span>,<span class="green">'G'</span>,<span class="green">'T'</span>,<br/>
+            <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;'G'</span>,<span class="green">'A'</span>,<span class="green">'T'</span><br/>
+            &nbsp;&nbsp;]<br/><br/>
+            <span class="blue">const second</span> = <span class="red">pAequorFactory</span>(<span class="red">15</span>, <span class="red">mockUpStrand</span>());<br/>
+            Second sample:<br/>
+            &nbsp;&nbsp;specimenNum: <span class="red">15</span>,<br/>
+            &nbsp;&nbsp;dna:[<br/>
+            <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;'T'</span>,<span class="green">'T'</span>,<span class="green">'A'</span>,<span class="green">'T'</span>,<br/>
+            <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;'T'</span>,<span class="green">'A'</span>,<span class="green">'G'</span>,<span class="green">'T'</span>,<br/>
+            <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;'A'</span>,<span class="green">'A'</span>,<span class="green">'T'</span>,<span class="green">'G'</span>,<br/>
+            <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;'C'</span>,<span class="green">'G'</span>,<span class="green">'T'</span><br/>
+            &nbsp;&nbsp;]<br/><br/>
+          </div>
+          <div id="output4">
+            <span class="green">------------------------------------------------</span><br/><br/>
+            <span class="comment">// .mutate() function test</span><br/><br/>
+            Original DNA: <span class="blue">'A','A','A','A','A','A','G','G','A','C','G','T','G','A','T'</span>;<br/><br/>
+            <span class="comment">// Running "</span>first.<span class="red">mutate()</span><span class="comment">"...</span><br/>
+            New DNA: <span class="blue">'A','A','A','A','A',</span><span class="cyan">'C'</span><span class="blue">,'G','G','A','C','G','T','G','A','T'</span>;<br/>
+          </div><br/>
+          <div id="output5">
+            <span class="green">------------------------------------------------</span><br/><br/>
+            <span class="comment">// .compareDNA() function test</span><br/><br/>
+            <span class="comment">// Running "</span>second.<span class="red">compareDNA(</span>first<span class="red">)</span><span class="comment">"...</span><br/>
+            Specimen #<span class="red">15</span> and specimen #<span class="red">12</span> have <span class="red">26%</span> DNA in common.<br/>
+            <span class="yellow">undefined</span><br/>
+          </div><br/>
+          <div id="output6">
+            <span class="green">------------------------------------------------</span><br/><br/>
+            <span class="comment">// .willLikelySurvive() function test</span><br/><br/>
+            <span class="comment">// Running "</span>first.<span class="red">willLikelySurvive()</span><span class="comment">"...</span><br/>
+            First specimen will likely survive: <span class="yellow">false</span><br/>
+          </div>
+        </div>
+        <div class="terminalWrapper">
+          <div id="output7">
+            <span class="comment">// createSurvivingSpecimens() function test</span><br/><br/>
+            <span class="comment">// Running "</span>const survivingSpecimens = <span class="red">createSurvivingSpecimens(30)</span><span class="comment">"</span><br/><br/>
+            
+            survivingSpecimens:<br/>
+              [<br/>
+                &nbsp;&nbsp;{<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">5</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'G','T','A','C','G','G','G','C','G','G','A','A','C','A','C'</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                &nbsp;&nbsp;},<br/>
+                &nbsp;&nbsp;{<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">10</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'G','C','C','T','G','A','A','C','C','C','T','C','T','C','A'</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                &nbsp;&nbsp;},<br/>
+                &nbsp;&nbsp;{<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">11</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'C','T','C','T','C','C','G','C','T','G','C','C','C','T','G'</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                &nbsp;&nbsp;},<br/>
+                <div id="elipses" title="Click to see the full output">&nbsp;&nbsp;...<br/></div>
+                <div id="closeBracket">]</div>
+                <div id="fullResults">
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">12</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'T','G','G','C','G','G','G','G','C','T','A','G','A','C','A'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">17</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'C','A','A','G','A','G','G','G','T','G','T','C','T','G','G'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">22</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'A','C','A','T','G','T','G','A','G','G','G','T','C','G','G'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">23</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'G','G','T','G','C','A','G','G','C','A','C','C','T','C','G'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">25</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'A','C','A','C','T','C','A','G','A','G','C','T','G','C','C'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">28</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'A','G','T','C','T','G','T','A','G','G','A','G','G','G','C'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">29</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'A','A','G','T','A','C','C','T','C','C','C','T','G','C','C'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">31</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'C','G','T','G','T','C','C','A','G','C','T','A','T','G','G'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">34</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'A','G','C','G','C','G','T','C','T','C','C','A','C','C','A'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">35</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'G','A','C','C','A','T','G','G','G','A','C','G','T','G','T'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">42</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'G','C','G','A','C','T','G','G','A','C','T','G','T','G','A'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">44</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'T','A','C','T','C','C','C','G','T','A','G','C','C','T','C'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">47</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'C','G','A','T','G','G','T','C','C','C','G','A','T','T','G'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">53</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'T','G','G','T','C','G','C','C','T','T','C','A','C','T','C'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">56</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'G','G','A','T','G','G','C','G','G','G','C','T','G','C','A'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">59</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'G','C','C','T','C','G','G','C','C','C','T','G','C','C','A'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">62</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'T','G','T','T','G','C','T','G','C','C','G','T','T','G','C'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">63</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'C','C','G','A','C','A','T','C','T','T','G','G','G','C','G'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">67</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'C','G','G','T','G','G','G','C','G','T','C','C','A','T','G'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">70</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'C','G','C','G','A','T','C','T','C','A','G','C','C','C','C'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">71</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'C','T','C','G','C','C','A','T','G','C','C','C','C','T','A'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">73</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'C','T','G','C','A','T','G','T','G','A','A','C','C','C','G'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">74</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'T','A','G','G','T','C','C','C','G','A','C','G','C','T','A'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">76</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'T','A','C','T','C','G','T','C','T','G','G','C','C','T','G'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">80</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'C','G','T','T','A','C','G','A','G','C','C','A','C','T','C'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">81</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'C','T','G','A','C','A','G','C','C','C','C','C','C','C','C'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                  &nbsp;&nbsp;{<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;specimenNum: <span class="red">84</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dna: <span class="blue">'A','T','G','C','C','A','G','C','T','A','C','C','C','T','C'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mutate: <span class="yellow">[Function: mutate]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;compareDNA: <span class="yellow">[Function: compareDNA]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;willLikelySurvive: <span class="yellow">[Function: willLikelySurvive]</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;complementStrand: <span class="yellow">[Function: complementStrand]</span><br/>
+                  &nbsp;&nbsp;},<br/>
+                ] <span id="hideResults">(click to hide)</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
+
