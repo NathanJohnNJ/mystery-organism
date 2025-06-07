@@ -5,6 +5,7 @@ const btnArray = ['btn1', 'btn2', 'btn3', 'btn4', 'btn5', 'btn6', 'btn7', 'btn8'
 const moreArray = ['more1', 'more2', 'more3', 'more4'];
 const comment = document.getElementById('comment');
 const commentBtn =document.getElementById('commentBtn');
+const fullToggle = document.getElementById("toggleWithLabels");
 const toggle = document.getElementById('toggle');
 const togLeft = document.getElementById('togLeft');
 const togCenter = document.getElementById('togCenter');
@@ -105,6 +106,7 @@ btnArray.map((btn, i) => {
           factory.style.display = 'block';
           out.style.display = "block";
           resultsTerminal.style.display = "block";
+          fullToggle.style.display = "flex";
         }else{
           plus.innerText = "+";
           out.style.display = "none";
@@ -124,6 +126,7 @@ btnArray.map((btn, i) => {
           factory.style.display = 'block';
           out.style.display="block";
           resultsTerminal.style.display = "block";
+          fullToggle.style.display = "flex";
         }else{
           plus.innerText = "+";
           section.style.display = "none";
@@ -132,6 +135,7 @@ btnArray.map((btn, i) => {
           if (right3.innerText === "+" && right4.innerText === "+" && right5.innerText === "+" && right6.innerText === "+" && right7.innerText === "+" && right8.innerText === "+"){
             factory.style.display = 'none';
             resultsTerminal.style.display = 'none';
+            fullToggle.style.display = "none";
           }
         }
         break;
@@ -144,6 +148,7 @@ btnArray.map((btn, i) => {
           factory.style.display = 'block';
           out.style.display="block";
           resultsTerminal.style.display = "block";
+          fullToggle.style.display = "flex";
         }else{
           plus.innerText = "+";
           section.style.display = "none";
@@ -152,6 +157,7 @@ btnArray.map((btn, i) => {
           if (right3.innerText === "+" && right4.innerText === "+" && right5.innerText === "+" && right6.innerText === "+" && right7.innerText === "+" && right8.innerText === "+"){
             factory.style.display = 'none';
             resultsTerminal.style.display = "none";
+            fullToggle.style.display = "none";
           }
         }
         break;
@@ -165,6 +171,7 @@ btnArray.map((btn, i) => {
           more.style.display = 'block';
           factory.style.display = 'block';
           resultsTerminal.style.display = "block";
+          fullToggle.style.display = "flex";
         }else{
           plus.innerText = "+";
           section.style.display = "none";
@@ -173,6 +180,7 @@ btnArray.map((btn, i) => {
           if (right3.innerText === "+" && right4.innerText === "+" && right5.innerText === "+" && right6.innerText === "+" && right7.innerText === "+" && right8.innerText === "+"){
             factory.style.display = 'none';
             resultsTerminal.style.display = "none";
+            fullToggle.style.display = "none";
           }
         }
         break;
@@ -189,6 +197,7 @@ btnArray.map((btn, i) => {
           comment.style.display = "none";
           commentBtn.style.display = 'none';
           resultsTerminal.style.display = "block";
+          fullToggle.style.display = "flex";
         }else{
           plus.innerText = "+";
           section.style.display = "none";
@@ -203,6 +212,7 @@ btnArray.map((btn, i) => {
           if (right3.innerText === "+" && right4.innerText === "+" && right5.innerText === "+" && right6.innerText === "+" && right7.innerText === "+" && right8.innerText === "+"){
             factory.style.display = 'none';
             resultsTerminal.style.display = "none";
+            fullToggle.style.display = "none";
           }
         }
         break;
@@ -220,6 +230,7 @@ btnArray.map((btn, i) => {
           comment.style.display = "none";
           commentBtn.style.display = 'none';
           lastOutput.style.display = "block";
+          fullToggle.style.display = "flex";
         }else{
           plus.innerText = "+";
           section.style.display = "none";
@@ -228,6 +239,7 @@ btnArray.map((btn, i) => {
           moreArray.map((more, i)=> {
             if (document.getElementById(`right${i+4}`).innerText === "+"){
               document.getElementById(more).style.display = "none";
+              fullToggle.style.display = "none";
             }
           })
           commentBtn.style.display = 'block';
@@ -235,6 +247,7 @@ btnArray.map((btn, i) => {
           if (right3.innerText === "+" && right4.innerText === "+" && right5.innerText === "+" && right6.innerText === "+" && right7.innerText === "+" && right8.innerText === "+"){
             factory.style.display = 'none';
             resultsTerminal.style.display = "none";
+            fullToggle.style.display = "none";
           }
         }
         break;

@@ -234,8 +234,8 @@ main{
 .leftCol{
   width: 33%;
 }
- aside{
-  display: flex;
+ #toggleWithLabels{
+  display: none;
   flex-direction: row;
   height:80px;
  }
